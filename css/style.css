@@ -1,2 +1,92 @@
-git push -u origin main
-git push -u origin main
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+body {
+    padding: 30px;
+}
+.block { margin: 0 0 20px 0;}
+
+.block p {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 0 20px 0;
+}
+
+.block p:nth-child(odd){ /* сработает псевлокласс для нечетных параграфов*/
+    background-color: yellowgreen;
+}
+.block p:nth-child(even){ /* сработает псевлокласс для четных параграфов*/
+    background-color: gainsboro;
+}
+.link {
+    color: red;
+}
+.link:visited{
+    color: green; /*visited работает после перехода по ссылке*/
+}
+.link:hover { /*hover срабатывает при наведении мыши */
+    color: darkblue;
+    text-decoration: underline;
+}
+.link:active{ /*active срабатывает при нажатии мыши */
+    color: yellow;
+}
+
+
+.textinput {
+    border: 1px solid black;
+    height: 50px;
+    padding: 0 15px;
+    font-size: 18px;
+    width: 300px;
+    margin: 0 0 10px 0;
+}
+.textinput:focus{ /*focus срабатывает при фокусировке мыши в тэге форм */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 2);
+}
+.textbutton {
+    display: block;
+    height: 50px;
+    width: 300px;
+    background-color: chartreuse;
+    font-size: 18px;
+    color: darkblue;
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+}
+.textbutton:hover{
+    background-color: seashell;
+    color: black;
+}
+.list {
+}
+.list li{
+    font-size: 18px;
+    margin: 0 0 15px 0;
+}
+.list li:first-child{ /* задали цвет первому элементу списка*/
+    color: yellow;
+}
+.list li:last-child{ /* задали цвет последнему элементу списка*/
+    color: green;
+}
+.list li:nth-child(4) { /* задали цвет 4 элементу списка*/
+    color: red;
+}
+.list li:nth-child(4):hover { /* при наведении цвет 4го элта будет черный*/
+    color: black;
+}
